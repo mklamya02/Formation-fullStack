@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <script type="module" src="app.js" async></script>
+    <title>Cash Machine App</title>
+  </head>
+  <body>
+    <header>
+      <h1>Welcome To the Virtual Cash Machine Store</h1>
+    </header>
+    <section>
+      <div class="catalog">
+        <div class="catalog-header">
+          <h2>CashMachine - register 1</h2>
+          <p>Please pick your products!</p>
+        </div>
+        <div class="product-grid" id="products-form">
+          <button type="button" class="product-card product-btn" value="Phone">
+            <span class="emoji">📱</span>
+            <span class="name">Phone</span>
+            <span class="price">$300</span>
+          </button>
+          <button
+            type="button"
+            class="product-card product-btn"
+            value="Smart TV"
+          >
+            <span class="emoji">📺</span>
+            <span class="name">Smart TV</span>
+            <span class="price">$220</span>
+          </button>
+          <button
+            type="button"
+            class="product-card product-btn"
+            value="Gaming Console"
+          >
+            <span class="emoji">🎮</span>
+            <span class="name">Gaming Console</span>
+            <span class="price">$150</span>
+          </button>
+          <button
+            type="button"
+            class="product-card product-btn oos"
+            value="Banana"
+          >
+            <span class="emoji">🍌</span>
+            <span class="name">Banana</span>
+            <span class="price">N/A</span>
+          </button>
+          <button
+            type="button"
+            class="product-card product-btn oos"
+            value="Fries"
+          >
+            <span class="emoji">🍟</span>
+            <span class="name">Fries</span>
+            <span class="price">N/A</span>
+          </button>
+          <button
+            type="button"
+            class="product-card product-btn oos"
+            value="Dart Board"
+          >
+            <span class="emoji">🎯</span>
+            <span class="name">Dart Board</span>
+            <span class="price">N/A</span>
+          </button>
+          <button
+            type="button"
+            class="product-card product-btn oos"
+            value="Robot Vacuum"
+          >
+            <span class="emoji">🧹</span>
+            <span class="name">Robot Vacuum</span>
+            <span class="price">N/A</span>
+          </button>
+          <button
+            type="button"
+            class="product-card product-btn oos"
+            value="Drone"
+          >
+            <span class="emoji">🛸</span>
+            <span class="name">Drone</span>
+            <span class="price">N/A</span>
+          </button>
+        </div>
+        
+      </div>
+      <div class="left-panel">
+        <div class="cart">
+          <h3>Shopping Cart</h3>
+          <ul id="cart-list"></ul>
+        </div>
+        <form action="#" id="pay-form">
+          <h3>Payment</h3>
+          <div class="totals">
+            <div class="total-line">
+              <label for="total-output">Total</label>
+              <input type="text" id="total-output" disabled value="0" />
+            </div>
+            <div class="total-line">
+              <label for="final-output"
+                >Final (after 10% discount if > $400)</label
+              >
+              <input type="text" id="final-output" disabled value="0" />
+            </div>
+          </div>
+          <div class="pay-action">
+            <label for="cash-input">Your Cash</label>
+            <input
+              type="number"
+              id="cash-input"
+              min="0"
+              step="1"
+              placeholder="Enter amount"
+            />
+            <input type="submit" value="Pay Now" />
+          </div>
+          <div id="message" role="status" aria-live="polite"></div>
+        </form>
+      </div>
+    </section>
+  </body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>PokeFetch</title>
+    <script defer src="app.js"></script>
+    <link href="styles.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header>
+      <h1>PokeFetch</h1>
+    </header>
+    <section>
+      <div>
+        <form id="search-form" autocomplete="off">
+          <input
+            id="q"
+            name="q"
+            placeholder="Search by name or id (e.g. pikachu or 25)"
+            type="text"
+          />
+          <button id="search-btn" type="submit">Search</button>
+        </form>
+      </div>
+      <div class="actions-btn-container">
+        <button id="surprise-me" type="button">Surprise Me</button>
+        <button id="cancel" type="button">Cancel</button>
+      </div>
+    </section>
+
+    <div class="pokemon-container">
+      <div id="card" aria-live="polite">
+        <div class="card-inner">
+          <div class="sprite-wrap">
+            <img id="sprite" alt="Pokemon sprite" src="" />
+          </div>
+          <div class="meta">
+            <h2 id="name">—</h2>
+            <p id="ident">#—</p>
+            <div id="types" class="types"></div>
+          </div>
+        </div>
+        <div class="stats" id="stats"></div>
+        <p class="flavor" id="flavor">Enter a name or pick Surprise Me.</p>
+      </div>
+      <div id="history-status-container">
+        <div id="history">
+          <h4>Last 10 Searches</h4>
+          <ul id="history-list"></ul>
+        </div>
+        <div id="status" role="status" aria-live="polite"></div>
+      </div>
+    </div>
+  </body>
+</html>
