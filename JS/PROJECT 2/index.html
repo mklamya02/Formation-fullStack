@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    </head>
+<body>
+    
+    <div id="wrapper">
+        <div class="calculator">
+            
+            <div class="display" id="display">0</div>
+            
+           
+            <div class="keys" id="keys">
+               
+                <button data-type="cmd" data-value="AC">AC</button>
+                <button data-type="cmd" data-value="CE">CE</button>
+                <button data-type="cmd" data-value="neg">±</button>
+                <button data-type="cmd" data-value="pct">%</button>
+                
+                
+                <button data-type="digit" data-value="7">7</button>
+                <button data-type="digit" data-value="8">8</button>
+                <button data-type="digit" data-value="9">9</button>
+                <button data-type="op" data-value="÷">÷</button>
+                
+               
+                <button data-type="digit" data-value="4">4</button>
+                <button data-type="digit" data-value="5">5</button>
+                <button data-type="digit" data-value="6">6</button>
+                <button data-type="op" data-value="×">×</button>
+                
+                
+                <button data-type="digit" data-value="1">1</button>
+                <button data-type="digit" data-value="2">2</button>
+                <button data-type="digit" data-value="3">3</button>
+                <button data-type="op" data-value="−">−</button>
+                
+                
+                <button data-type="digit" data-value="0">0</button>
+                <button data-type="digit" data-value=".">.</button>
+                <button data-type="op" data-value="+">+</button>
+                
+                
+                <button data-type="eq">=</button>
+            </div>
+        </div>
+        
+        
+        <div id="history">
+            <h3>Historique</h3>
+            <ul id="history-list"></ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
